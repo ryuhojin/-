@@ -1,6 +1,7 @@
 {
   "name": "reactboilerplatebyhojin",
   "version": "1.0.0",
+  "license": "MIT",
   "description": "ryuhojin react boiler plate",
   "scripts": {
     "dev": "webpack-dev-server --config config/webpack.dev.js",
