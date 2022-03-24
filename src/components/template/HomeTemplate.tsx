@@ -1,5 +1,5 @@
 import styled from "styled-components";
-const StyledBaseTemplate = styled.div`
+const StyledHomeTemplate = styled.div`
   display: flex;
   flex-direction: column;
 `;
@@ -15,7 +15,7 @@ const MarginTop80 = styled.div`
   margin-top: 70px;
 `;
 
-const BaseTemplate = ({
+const HomeTemplate = ({
   children,
   header,
 }: {
@@ -23,11 +23,11 @@ const BaseTemplate = ({
   header: JSX.Element;
 }) => {
   return (
-    <StyledBaseTemplate>
+    <StyledHomeTemplate>
       <StyledHeaderArea>{header}</StyledHeaderArea>
       <MarginTop80></MarginTop80>
       {children}
-    </StyledBaseTemplate>
+    </StyledHomeTemplate>
   );
 };
-export default BaseTemplate;
+export default HomeTemplate;
