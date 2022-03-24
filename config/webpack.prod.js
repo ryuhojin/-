@@ -14,6 +14,7 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, "../dist"),
     publicPath: "/",
     clean: true,
+    pathinfo: false,
   },
   module: {
     rules: [
@@ -21,9 +22,9 @@ module.exports = merge(common, {
         test: /\.(sa|sc|c)ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
+          "style-loader",
           "css-loader",
           "sass-loader",
-          "postcss-loader",
         ],
       },
     ],

@@ -15,12 +15,13 @@ module.exports = merge(common, {
   output: {
     filename: "[name].[contenthash].js",
     publicPath: "/",
+    pathinfo: false,
   },
   module: {
     rules: [
       {
         test: /\.(sa|sc|c)ss$/i,
-        use: ["css-loader", "sass-loader", "postcss-loader"],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
   },
