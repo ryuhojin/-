@@ -12,7 +12,7 @@ const StyledHeaderArea = styled.div`
 `;
 
 const MarginTop80 = styled.div`
-  margin-top: 70px;
+  margin-top: 60px;
 `;
 
 const HomeTemplate = ({
