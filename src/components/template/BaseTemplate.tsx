@@ -7,7 +7,7 @@ const StyledBaseTemplate = styled.div`
 const StyledHeaderArea = styled.div`
   position: fixed;
   width: 100%;
-  background: #E85F5C;
+  background: #4D7298;
   color: #FFF;
 `;
 
