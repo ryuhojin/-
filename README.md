@@ -1,6 +1,7 @@
-# 레쥬메이트
+# 레쥬메이트(반응형)
 > 이력서 초간단 하게 작성하기 <br/>
-> 겸사겸사 내 프로젝트 및 이력 관리하기
+> 겸사겸사 내 프로젝트 및 이력 관리하기<br/>
+> 기능 : 이력관리, PDF 출력 , 원하는 정보만 골라서 PDF출력(레이아웃제공)
 
 ### FRONT-END
 > 기술스택 : reactJs, TypeScript, Webpack, StyledComponents, Axios, React-query <br/>
