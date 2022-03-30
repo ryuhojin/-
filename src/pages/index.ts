@@ -5,9 +5,7 @@ export { default as Home } from "./Home";
 export { default as Login } from "./Login";
 export { default as Register } from "./Register";
 
-//유저
-
-//프로젝트
+//레쥬메
 export { default as Resume } from "./Resume";
+export { default as Write } from "./Write";
 
-//스터디
