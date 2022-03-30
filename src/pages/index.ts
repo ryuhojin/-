@@ -8,6 +8,6 @@ export { default as Register } from "./Register";
 //유저
 
 //프로젝트
-export { default as Project } from "./Project";
+export { default as Resume } from "./Resume";
 
 //스터디

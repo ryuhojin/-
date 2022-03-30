@@ -1,32 +1,39 @@
 import styled from "styled-components";
 const StyledBaseTemplate = styled.div`
-  display: flex;
-  flex-direction: column;
+  background:#fff;
+  height:100%;
 `;
 
-const StyledHeaderArea = styled.div`
-  position: fixed;
-  width: 100%;
-  background: #4D7298;
-  color: #FFF;
-`;
+const StyledContentTemplate = styled.div`
+  width:1728px;
+  margin-left:auto;
+  margin-right:auto;
+  @media only screen and (max-width: 1919px) {
+    width:1376px;
+  }
+  @media only screen and (max-width: 1440px) {
+    width:1024px;
+  }
+  @media only screen and (max-width: 1440px) {
+    width: calc(100% - 2rem);
+  }
+`
 
-const MarginTop80 = styled.div`
-  margin-top: 60px;
-`;
+// {
+//   children,
+//   header,
+// }: {
+//   children: JSX.Element | JSX.Element[];
+//   header: JSX.Element;
+// }
 
-const BaseTemplate = ({
-  children,
-  header,
-}: {
-  children: JSX.Element | JSX.Element[];
-  header: JSX.Element;
-}) => {
+const BaseTemplate = ({ children, header }: { children: JSX.Element | JSX.Element[], header: JSX.Element }) => {
   return (
     <StyledBaseTemplate>
-      <StyledHeaderArea>{header}</StyledHeaderArea>
-      <MarginTop80></MarginTop80>
-      {children}
+      {header}
+      <StyledContentTemplate>
+        {children}
+      </StyledContentTemplate>
     </StyledBaseTemplate>
   );
 };

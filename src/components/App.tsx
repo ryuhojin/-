@@ -1,21 +1,20 @@
 import { Helmet } from "react-helmet";
 import { Route, Routes } from "react-router-dom";
-import { Home, Login, Project, Register } from "@/pages";
+import { Home, Login, Resume, Register } from "@/pages";
 const App = () => {
   return (
     <>
       <Helmet>
-        <title>Mate</title>
+        <title>레쥬메이트</title>
         <meta
           name="description"
-          content="지금 우리가 필요한건 동료, 동료가 필요할땐 언제나 메이트"
+          content="당신의 이력서를 도와드립니다. 하나뿐인 이력서 작성 도우미 레쥬메이트"
         />
       </Helmet>
       <Routes>
-        <Route path="/project" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/" element={<Project />} />
+        <Route path="/" element={<Home/>} />
       </Routes>
     </>
   );
