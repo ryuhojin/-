@@ -7,7 +7,6 @@ const StyledH3 = styled.h3`
 
   span:last-child {
     font-size: 1rem;
-    color: #446bb4;
   }
 `;
 const StyledParagraph = styled.p`
