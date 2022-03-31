@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import ResumeIntro from "./ResumIntro";
-
+import { ResumeCareer, ResumeIntro, ResumeSchool } from "./";
+import ResumeProject from "./ResumeProject";
 const StyledResumForm = styled.div`
   display: flex;
   flex-direction: column;
@@ -10,6 +10,9 @@ const ResumeForm = () => {
     <>
       <StyledResumForm>
         <ResumeIntro />
+        <ResumeSchool />
+        <ResumeCareer />
+        <ResumeProject />
       </StyledResumForm>
     </>
   );
