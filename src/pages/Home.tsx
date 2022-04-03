@@ -1,11 +1,11 @@
-import Header from "@/components/base/Header";
 import SubTitle from "@/components/base/SubTitle";
-import ResumeList from "@/components/resume/ResumeList";
+import ResumeListContainer from "@/containers/resume/ResumeListContainer";
 import HomeTemplate from "@/components/template/HomeTemplate";
+import HeaderContainer from "@/containers/base/HeaderContainer";
 const Home = () => {
   return (
     <>
-      <HomeTemplate header={<Header />}>
+      <HomeTemplate header={<HeaderContainer />}>
         <br />
         <SubTitle
           title={"이력서 목록"}
@@ -18,7 +18,7 @@ const Home = () => {
           }
         />
         <br />
-        <ResumeList />
+        <ResumeListContainer />
       </HomeTemplate>
     </>
   );

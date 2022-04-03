@@ -3,40 +3,42 @@ import ResumeCard from "./ResumeCard";
 import ResumeCardPlus from "./ResumeCardPlus";
 
 const StyledResumeList = styled.div`
-    flex : 1 1 0%;
-`
+  flex: 1 1 0%;
+`;
 const StyledCardList = styled.div`
-    margin: -1rem;
-    display:flex;
-    flex-wrap:wrap;
-`
+  margin: -1rem;
+  display: flex;
+  flex-wrap: wrap;
+`;
 const StyledCardCount = styled.h4`
-    text-align:end;
-`
+  text-align: end;
+`;
 const ResumeList = () => {
-    return <>
-        <StyledResumeList>
-            <StyledCardCount>총 12개의 이력서</StyledCardCount>
-            <StyledCardList>
-                <ResumeCardPlus />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-                <ResumeCard />
-            </StyledCardList>
-        </StyledResumeList>
+  return (
+    <>
+      <StyledResumeList>
+        <StyledCardCount>총 12개의 이력서</StyledCardCount>
+        <StyledCardList>
+          <ResumeCardPlus/>
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+          <ResumeCard />
+        </StyledCardList>
+      </StyledResumeList>
     </>
-}
+  );
+};
 export default ResumeList;

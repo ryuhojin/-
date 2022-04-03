@@ -37,7 +37,7 @@ const ResumeIntro = () => {
         </>
       </ResumeFormTitle>
       <StyledTextarea
-        placeholder="이곳은 자기소개를 쓰는 칸입니다. 개발자 동료 여러분의 자기소개를 통해 가치를 올려보세요."
+        placeholder="개발자 동료 여러분의 자기소개를 통해 가치를 올려보세요."
         onKeyDown={(e) => {
           e.currentTarget.style.height = "auto";
           e.currentTarget.style.height = e.currentTarget.scrollHeight + "px";

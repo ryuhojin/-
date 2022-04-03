@@ -1,17 +1,17 @@
 import { darken, lighten } from "polished";
-import React from "react";
+import React, { EventHandler, ReactEventHandler } from "react";
 import styled from "styled-components";
 
 const StyledHeader = styled.div`
-  width:1728px;
+  width: 1728px;
   height: 60px;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   @media only screen and (max-width: 1919px) {
-    width:1376px;
+    width: 1376px;
   }
   @media only screen and (max-width: 1440px) {
-    width:1024px;
+    width: 1024px;
   }
   @media only screen and (max-width: 1440px) {
     width: calc(100% - 2rem);
@@ -19,11 +19,10 @@ const StyledHeader = styled.div`
 `;
 
 const StyledContainer = styled.div`
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  color:#36558F;
-
+  color: #36558f;
 `;
 
 const StyledLogo = styled.h3`
@@ -46,12 +45,16 @@ const StyledMenuList = styled.div`
   }
 `;
 
-const Header = () => {
+const Header = ({
+  onClickHomeBtn,
+}: {
+  onClickHomeBtn: React.ReactEventHandler<Element>;
+}) => {
   return (
     <>
       <StyledHeader>
         <StyledContainer>
-          <StyledLogo>레쥬메이트</StyledLogo>
+          <StyledLogo onClick={onClickHomeBtn}>레쥬메이트</StyledLogo>
           <StyledMenuList>
             <div>로그인</div>
           </StyledMenuList>

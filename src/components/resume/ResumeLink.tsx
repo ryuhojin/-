@@ -2,23 +2,19 @@ import styled from "styled-components";
 import ResumeFormTitle from "./ResumeFormTitle";
 const StyledResumeLink = styled.div``;
 const StyledLinkRow = styled.div`
-  display: flex;
-  justify-content: space-between;
-  input,
-  select {
-    line-height: 1.125rem;
-    font-size: 1.25rem;
+  display: grid;
+  grid-template-columns: minmax(6rem, auto) 1fr;
+  grid-gap: .5rem;
+  input {
     padding: 1rem;
     outline: none;
-    border-radius: 5px;
-    border: 1px solid #e1e1e1;
   }
-  select {
-  }
-  input:last-child {
-    flex-grow: 1;
-    margin-left: 1rem;
-  }
+`;
+const StyledLinkAdd = styled.div`
+  text-align: center;
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+  border: 3px dashed black;
 `;
 
 const ResumeLink = () => {
@@ -36,12 +32,13 @@ const ResumeLink = () => {
       <StyledResumeLink>
         <StyledLinkRow>
           <select>
-            <option>GITHUB</option>
-            <option>BLOG</option>
-            <option>ETC</option>
+            <option>깃허브</option>
+            <option>블로그</option>
+            <option>기타</option>
           </select>
-          <input type="text" placeholder="주소" />
+          <input type="url" placeholder="주소" />
         </StyledLinkRow>
+        <StyledLinkAdd>+</StyledLinkAdd>
       </StyledResumeLink>
       <br />
     </>

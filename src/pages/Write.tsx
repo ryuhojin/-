@@ -1,5 +1,5 @@
 import BaseTemplate from "@/components/template/BaseTemplate";
-import Header from "@/components/base/Header";
+import HeaderContainer from "@/containers/base/HeaderContainer";
 import SubTitle from "@/components/base/SubTitle";
 import ResumeForm from "@/components/resume/ResumeForm";
 
@@ -7,7 +7,7 @@ const Write = () => {
   return (
     <>
       <BaseTemplate
-        header={<Header />}
+        header={<HeaderContainer />}
         subtitle={
           <SubTitle
             title={"이력서 작성"}
