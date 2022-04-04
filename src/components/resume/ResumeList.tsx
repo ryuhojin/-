@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import ResumeCard from "./ResumeCard";
-import ResumeCardPlus from "./ResumeCardPlus";
+import { ResumeCard, ResumeCardPlus } from "./list";
 
 const StyledResumeList = styled.div`
   flex: 1 1 0%;
@@ -19,7 +18,7 @@ const ResumeList = () => {
       <StyledResumeList>
         <StyledCardCount>총 12개의 이력서</StyledCardCount>
         <StyledCardList>
-          <ResumeCardPlus/>
+          <ResumeCardPlus />
           <ResumeCard />
           <ResumeCard />
           <ResumeCard />

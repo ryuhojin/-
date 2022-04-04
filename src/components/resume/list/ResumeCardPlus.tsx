@@ -1,6 +1,7 @@
-import { lighten } from "polished";
 import styled from "styled-components";
+import { lighten } from "polished";
 import { useNavigate } from "react-router-dom";
+
 const StyledResumeCard = styled.div`
   margin: 1rem;
   width: 20rem;

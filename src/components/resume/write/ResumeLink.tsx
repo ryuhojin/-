@@ -4,7 +4,7 @@ const StyledResumeLink = styled.div``;
 const StyledLinkRow = styled.div`
   display: grid;
   grid-template-columns: minmax(6rem, auto) 1fr;
-  grid-gap: .5rem;
+  grid-gap: 0.5rem;
   input {
     padding: 1rem;
     outline: none;
@@ -12,21 +12,16 @@ const StyledLinkRow = styled.div`
 `;
 const StyledLinkAdd = styled.div`
   text-align: center;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   margin: 1rem 0;
   border: 3px dashed black;
+  cursor:pointer;
 `;
 
 const ResumeLink = () => {
   return (
     <>
-      <ResumeFormTitle
-        title={
-          <>
-            <span>링크</span>
-          </>
-        }
-      >
+      <ResumeFormTitle title={<span>링크</span>}>
         <>· 자신을 나타낼 수 있는 링크를 입력해주세요.</>
       </ResumeFormTitle>
       <StyledResumeLink>
